@@ -1,24 +1,27 @@
 
 
-import React from  'react';
-import Button from './component/button';
+import React from 'react';
+import Header1 from './component/header';
+import Footer from './component/footer'
+import Main from './component/main'
+class App extends React.Component {
+  render() {
+    return (
+      <div>
 
-class App extends React.Component{
-render() {
-return(
-  <div>
-  <h1> hello  </h1>
-  <p> how are you?</p>
-  <Button/>
-  
+        <Header1 />
+        <Main />
+        <Footer />
+
+        
 
 
 
-  </div>
-)
+      </div>
+    )
 
+  }
 }
-}
+
 
 export default App;
-
