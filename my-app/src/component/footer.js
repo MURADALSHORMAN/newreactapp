@@ -8,7 +8,7 @@ class Footer extends React.Component {
             <div>
                 <footer>
                     <p>
-                        Murad alshorman
+                       create by Murad alshorman
                     </p>
                 </footer>
             </div>
