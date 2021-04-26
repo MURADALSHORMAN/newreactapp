@@ -1,3 +1,4 @@
+'use strict';
 import React from 'react';
 
 
@@ -10,8 +11,7 @@ class HornedBeast extends React.Component {
                 <p>{this.props.description}</p>
                 <img className="imgstyle" src={this.props.imageUrl} alt={this.props.title} title={this.props.title}/>
            
-           
-           
+                 
             </div>
         )
     }
