@@ -10,7 +10,7 @@ class Header1 extends React.Component {
             <div>
                 <header>
                     <h1>
-                        lab 1
+                    HornedBeast
                     </h1>
                 </header>
             </div>
