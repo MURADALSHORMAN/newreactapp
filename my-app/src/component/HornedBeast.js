@@ -1,17 +1,42 @@
-'use strict';
 import React from 'react';
-
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 
 class HornedBeast extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            numclicks: 0
+        }
+    }
+    numberOfclicks = () => {
+        this.setState({ numclicks: this.state.numclicks + 1 })
+    }
+
     render() {
         return (
-            <div>
-                <h2>{this.props.title} </h2>
-                <p>{this.props.description}</p>
-                <img className="imgstyle" src={this.props.imageUrl} alt={this.props.title} title={this.props.title}/>
-           
-                 
+
+            <div>{
+                <Card style={{ width: '18rem', margin: "20px" }}>
+                    <Card.Img variant="top" src={this.props.url} />
+                    <Card.Body>
+                        <Card.Title>
+                            {this.props.title}
+                        </Card.Title>
+
+                        <Card.Text>
+                            {this.props.description}
+                        </Card.Text>
+                        <Card.Text>
+                            {this.state.numclicks}
+                        </Card.Text>
+                        <Button onClick={this.numberOfclicks} variant='primary'>Vote
+                    </Button>
+                    </Card.Body>
+                </Card>
+            }
+
             </div>
         )
     }
