@@ -1,4 +1,3 @@
-'use strict';
 
 import React from 'react';
 
@@ -10,7 +9,7 @@ class Header1 extends React.Component {
             <div>
                 <header>
                     <h1>
-                        lab 1
+                   asdlfkdgasfl  
                     </h1>
                 </header>
             </div>
