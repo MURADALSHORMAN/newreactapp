@@ -11,15 +11,31 @@ import SelectedBeast  from './component/SelectedBeast';
 
 class App extends React.Component {
 
- 
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//         show: false,
+                 
+//     }
+// }
+// closing = () => {
+//     this.setState({ show:false })
+// }
+
+// viewbeats = () => {
+//     this.setState({ 
+//         show:true,
+//          })
+//         console.log('view fun in app');
+// }
 
   render() {
     return (
       <div>
 
         <Header1 />
+        <SelectedBeast  />
         <Main />
-        <SelectedBeast />
         <Footer />
 
       </div>
