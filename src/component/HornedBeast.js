@@ -10,6 +10,8 @@ class HornedBeast extends React.Component {
         this.state = {
             show: false,
             numclicks: 0,
+            newhorns: '',
+
 
 
         }

@@ -7,35 +7,20 @@ import Header1 from './component/header';
 import Footer from './component/footer';
 import Main from './component/main';
 import SelectedBeast  from './component/SelectedBeast';
-
+import Formapp  from './component/Form';
 
 class App extends React.Component {
 
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//         show: false,
-                 
-//     }
-// }
-// closing = () => {
-//     this.setState({ show:false })
-// }
-
-// viewbeats = () => {
-//     this.setState({ 
-//         show:true,
-//          })
-//         console.log('view fun in app');
-// }
+ 
 
   render() {
     return (
       <div>
 
         <Header1 />
-        <SelectedBeast  />
-        <Main />
+        <Formapp  />
+        <SelectedBeast   />
+        {/* <Main /> */}
         <Footer />
 
       </div>
