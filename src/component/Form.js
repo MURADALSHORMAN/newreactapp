@@ -5,7 +5,7 @@ import Main from './main';
 
 class Formapp extends React.Component {
 
-
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -20,30 +20,31 @@ class Formapp extends React.Component {
     };
 
     newoption = (event) => {
-        console.log(event);
+        
 
         this.setState({
 
-            newhorns: (event.target.value)
+            newhorns: (event.target.value)*1
 
         })
-        console.log(this.state.newhorns);
+        
 
     };
+  
 
     render() {
         return (
 
             <>
-                <Form  >
+                <Form onChange={this.newoption} >
                     <Form.Group controlId="exampleForm.ControlSelect1">
                         <Form.Label>Select HornedBeast Group :</Form.Label>
                         <Form.Control onChange={this.newoption} as="select">
-                            <option >Select one</option>
-                            <option >1</option>
-                            <option >2</option>
-                            <option >3</option>
-                            <option >other</option>
+                            <option value='0'>All</option>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='100'>other</option>
 
                         </Form.Control>
                     </Form.Group>
@@ -51,7 +52,7 @@ class Formapp extends React.Component {
 
                 </Form>
 
-                <Main lastupdate={this.state.newhorns}/>
+                <Main last={this.state.newhorns}/>
             </>
         )
     }
